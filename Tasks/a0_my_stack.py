@@ -3,6 +3,7 @@ My little Stack
 """
 from typing import Any
 
+my_stack = []
 
 def push(elem: Any) -> None:
     """
@@ -42,3 +43,13 @@ def clear() -> None:
     :return: None
     """
     return None
+
+if __name__ == '__main__':
+    push(1)
+    print(my_stack)
+    push(100)
+    print(my_stack)
+
+    #перед checkout обязательно commit cntrl+k
+
+
