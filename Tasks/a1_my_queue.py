@@ -4,12 +4,13 @@ My little Queue
 from typing import Any
 
 
-my_queue = []
+queue = []
 
 def enqueue(elem: Any) -> None:
     """
     Operation that add element to the end of the queue
-
+    добавить элемент на первое место
+    сложить списки [0] + [1,2,3] или (insert pop(0))  (append pop(last elem))
     :param elem: element to be added
     :return: Nothing
     """
@@ -21,9 +22,11 @@ def enqueue(elem: Any) -> None:
 def dequeue() -> Any:
     """
     Return element from the beginning of the queue. Should return None if no elements.
+    элемент удаляется
 
     :return: dequeued element
     """
+
 
     return None
 
