@@ -49,7 +49,7 @@ if __name__ == '__main__':
     print(my_stack)
     push(100)
     print(my_stack)
-
-    #перед checkout обязательно commit cntrl+k
+    # новое задание от Master
+    # перед checkout обязательно commit cntrl+k
 
 
