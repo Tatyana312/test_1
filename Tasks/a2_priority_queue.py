@@ -4,7 +4,8 @@ Priority Queue
 Queue priorities are from 0 to 10
 """
 from typing import Any
-
+from collections import deque
+# словарь - приоритет и значение проверка и выдача за константу (1) словарь очередей либо
 
 def enqueue(elem: Any, priority: int = 0) -> None:
     """
