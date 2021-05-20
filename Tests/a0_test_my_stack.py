@@ -2,15 +2,15 @@ import unittest
 import Tasks.a0_my_stack as my_stack
 
 
-class MyTestCase(unittest.TestCase):
-    def setUp(self):
+class MyTestCase(unittest.TestCase):  #запуск тестирования функции
+    def setUp(self):  #встроенная функция в классе предподготовка
         my_stack.clear()
 
-    def test_clear(self):
-        my_stack.push(3)
-        my_stack.clear()
+    def test_clear(self):  # все функции несут смысл по тестированию, при автоматическом тестировании - в последнюю очередь
+        my_stack.push(3)  # положить
+        my_stack.clear()  # очистить
 
-        self.assertIsNone(my_stack.pop(), msg="Did you clear the stack?")
+        self.assertIsNone(my_stack.pop(), msg="Did you clear the stack?") # проверяет, в тот момент когда выполняем ПОП - достаем элемент, а стек пустой, должно вернуться NONE, то что вернулось - действительно NONE
 
     def test_empty_stack(self):
         self.assertIsNone(my_stack.pop(), msg="Should return None if no elements")
@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
         initial_elem = 3
         my_stack.push(initial_elem)
 
-        self.assertEqual(initial_elem, my_stack.pop())
+        self.assertEqual(initial_elem, my_stack.pop())  #левый аргумент равен правому, достаем 3. То что положили и то что дстали - Tru
 
     def test_multiple_pushes_pops(self):
         items = [i for i in range(10)]
