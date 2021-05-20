@@ -25,9 +25,9 @@ def pop() -> Any:
   достать элемент последнйи и удалить его
     :return: popped element
     """
-    last_elem = my_stack.pop() #заьирает элемент с конца и удаляет его
-
-    return last_elem
+    if my_stack:
+        last_elem = my_stack.pop() # моделировать ситуации, забирает элемент с конца и удаляет его   проверить длину списка. если стек не пустой, то забираем элемент и возвращаем этот элемент
+        return last_elem
 
 
 def peek(ind: int = 0) -> Any:

@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):  #запуск тестирования ф�
         initial_elem = 3
         my_stack.push(initial_elem)
 
-        self.assertEqual(initial_elem, my_stack.pop())
+        self.assertEqual(initial_elem, my_stack.pop())  #левый аргумент равен правому, достаем 3. То что положили и то что дстали - Tru
 
     def test_multiple_pushes_pops(self):
         items = [i for i in range(10)]
